@@ -18,3 +18,26 @@
 {
     color:blue; border: 2px solid green; height: 600px; align-content: center;text-align: center;padding: 50px;
 }
+/*it is for mobile screens */
+@media screen and (max-width: 425px){
+	.card{
+		background-color: orange;
+	}
+	.parent-card{
+		flex-direction: column-reverse;
+	}
+}
+/*tablets*/
+@media screen and (min-width: 426px) and (max-width: 768px){
+	.card{
+		background-color: yellow;
+	}
+	.parent-card{
+		flex-direction: row-reverse;
+	}
+}
+@media screen and (min-width: 769px) and (max-width: 1024px){
+	.card{
+		background-color: blue;
+	}
+}
